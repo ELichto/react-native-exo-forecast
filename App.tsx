@@ -5,7 +5,8 @@ import { persistQueryClient, PersistQueryClientProvider } from '@tanstack/react-
 import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister'
 import NetInfo from '@react-native-community/netinfo';
 import Forecast from './screens/Forecast';
-const queryClient = new QueryClient({
+
+export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 1000 * 60 * 5,
